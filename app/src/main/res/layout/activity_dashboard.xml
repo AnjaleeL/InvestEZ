@@ -27,6 +27,7 @@
             app:layout_constraintEnd_toStartOf="@+id/images"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+<!--        hdsdshdsh-->
 
         <TextView
             android:id="@+id/tvsub"
