@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">InvestEZ</string>
+
+    <string name="tvHello">Hello</string>
+    <string name="editPname">Jehan Fernando</string>
+    <string name="btnNotifi">Notification</string>
+    <string name="btnMyAcc">My Account</string>
+    <string name="tvInvestEZ">InvestEZ</string>
+    <string name="tvDesc"> #1 Invest Management App of Sri Lanka</string>
+    <string name="btnPortfolio">My Portfolios</string>
+    <string name="btnInvestPlans">Invest Plans</string>
+    <string name="btnQuickInvest">Quick Investment</string>
+
+    <string name="tvMyPortfolio">My Portfolios</string>
+    <string name="tvInvestType">Sampath Fixed</string>
+    <string name="tvInvestType5">Central Bank Bond</string>
+    <string name="tvInvestType6"></string>
+    <string name="tvInvestType7"></string>
+    <string name="btnView">View</string>
+    <string name="btnAddNew">Add New</string>
+
+    <string name="tvAddnewportfolio">Add New Portfolio</string>
+    <string name="btnClear">Clear</string>
+    <string name="btnSave">Save</string>
+    <string name="tvInvestTypes">Investment Type : </string>
+
+    <string name="btnDeletePortfolio">Delete</string>
+    <string name="btnEditPortfolio">Edit</string>
+
+    <string-array name="investOptions">
+        <item>Fixed Deposits</item>
+        <item>Gold</item>
+        <item>Stock Market</item>
+        <item>Real-Estate</item>
+        <item>Bonds</item>
+    </string-array>
+
+    <string name="tvPname">Name</string>
+    <string name="edittPname">Jehan Fenando</string>
+    <string name="tvPmail">Email</string>
+    <string name="editPmail">jehanfenando.gmail.com</string>
+    <string name="tvPadderss">Address</string>
+    <string name="editPaddress">Colombo 7</string>
+    <string name="btnUpdate">Update Account</string>
+    <string name="btnDeleter">Delete Account</string>
+
+    <string name="tvRegisterNow">Register Now</string>
+    <string name="tvRname">Your Name</string>
+    <string name="editRName">Enter your full name</string>
+    <string name="tvRmail">Your Email</string>
+    <string name="editRmail">Enter your email</string>
+    <string name="tvRaddress">Your Address</string>
+    <string name="editRaddress">Enter your Address</string>
+    <string name="tvRpassword">Your Password</string>
+    <string name="editRpassword">Enter your Password</string>
+    <string name="tvRCpassword">Confirm Password</string>
+    <string name="editRCpassword">ReEnter your Password</string>
+    <string name="btnRegister">Register</string>
+
+    <string name="tvMail">Your Email</string>
+    <string name="tvPassword">Your Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="tvL1">Don\'t Remember Password</string>
+    <string name="tvL2">Or Login with</string>
+    <string name="tvL3">Don\'t have any Account?</string>
+    <string name="btnSignUp">Sign Up</string>
+
+    <string name="btnSignIn">Sign In</string>
+
+    //IT21023682
+    <string name="tvsub">Grow your wealth.</string>
+    <string name="btnGold">Gold</string>
+    <string name="btnReal">Real Estate</string>
+    <string name="btnStock">Stock Market</string>
+    <string name="btnFd">FD</string>
+    //fixed Deposit
+    //table
+    <string name="fCol1">Bank</string>
+    <string name="fCol2">Option</string>
+    <string name="fCol3">Rate</string>
+
+    <string name="fRow1Bank">BOC</string>
+    <string name="fRow2Option">Annual</string>
+    <string name="fRow3Rate">20%</string>
+
+    <string name="TvFAmount">Invest Amount</string>
+    <string name="FDBank">Bank</string>
+
+    <string-array name="banks">
+        <item>BOC</item>
+        <item>Sampath Bank</item>
+        <item>NSB</item>
+        <item>Commercial Bank</item>
+        <item>Union Bank</item>
+
+    </string-array>
+
+    <string-array name="TimePlan">
+        <item>6 Months</item>
+        <item>Annual</item>
+    </string-array>
+
+    <string name="btnProceed">Proceed</string>
+    <string name="tvFd2">Your Profit</string>
+
+    <string name="btnSaveF">Save</string>
+    <string name="btnUpadateF">Update</string>
+    <string name="btnDeleteF">Delete</string>
+
+    //Real Estate
+    <string name="tvRText">Real Estate</string>
+    <string name="tvRSub"> Latest Listings</string>
+    <string name="tvCityR">City</string>
+    <string name="typeR">Type</string>
+    <string name="btnLiveRate">Live Rates</string>
+    <string name="tvCompany">Companies</string>
+
+    <string-array name="city">
+        <item>Anuradhapura</item>
+        <item>Colombo</item>
+        <item>Negombo</item>
+        <item>Gampaha</item>
+        <item>Kandy</item>
+        <item>Kurunegala</item>
+        <item>Jaffna</item>
+        <item>Galle</item>
+    </string-array>
+    <string-array name="etype">
+        <item>Urban</item>
+        <item>Rural</item>
+    </string-array>
+
+    //Gold
+    <string name="tvGold">Gold</string>
+    <string name="tvGAmount">Input Your Invest Amount</string>
+    <string name="tvMetal">Metal</string>
+    <string name="tvWeight">Weight</string>
+
+    <string name="btnSeeRate">See Today Rates</string>
+    <string name="tvbuy">Amount of gold you can buy</string>
+    <string name="tvSave">Save</string>
+    <string name="btnUpadate">Update</string>
+    <string name="btnDeleteG">Delete</string>
+
+    <string-array name="metal">
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Platinum</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>21 Carat</item>
+        <item>22 Carat</item>
+        <item>24 Carat</item>
+    </string-array>
+
+    <string-array name="Companies">
+        <item>Abans Finance PLC</item>
+        <item>Arpico Insurance Ltd</item>
+        <item>Cargills</item>
+        <item>John Keels</item>
+        <item>Hemas</item>
+        <item>Kingsbury</item>
+        <item>Sampath Bank</item>
+        <item>Sri Lanka Telecom</item>
+        <item>Tokyo Cement</item>
+    </string-array>
+
+    //columns table GOld table
+    <string name="Gcol1">Metal</string>
+    <string name="Gcol2">Rate</string>
+    <string name="Gcol3">Profit</string>
+    <string name="GRow1">Silver</string>
+    <string name="GRow2">10g</string>
+    <string name="GRow3">23,000/=</string>
+
+    //columns table fixDeposit table 2
+    <string name="col1">Bank</string>
+    <string name="col2">Amount</string>
+    <string name="col3">Rate</string>
+    <string name="col4">Profit</string>
+    <string name="row1Bank">BOC</string>
+    <string name="row2Option">Rs.100,000/=</string>
+    <string name="row3Rate">20%</string>
+    <string name="row4Profit">20000/=</string>
+
+    <string-array name="QuickInvestypes">
+        <item>Stock Market </item>
+        <item>Real Estate </item>
+    </string-array>
+
+    <string-array name="QuickInvesStock">
+        <item>Central Bank Bonds</item>
+        <item>Lanka IOC PLC Shares</item>
+        <item>Bogawantalawa Tea Estates Shares</item>
+    </string-array>
+
+
+</resources>

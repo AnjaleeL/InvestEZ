@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "68446668760",
+    "project_id": "investez-3e4b6",
+    "storage_bucket": "investez-3e4b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68446668760:android:25265ea5f5ab4c6b97d4ad",
+        "android_client_info": {
+          "package_name": "com.example.investez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68446668760-udnsmbmosvu7utbj438j4nha5mtmb5vt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVYexb_4NK8CR_NZhy5rIBZl1DitmXSLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68446668760-udnsmbmosvu7utbj438j4nha5mtmb5vt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

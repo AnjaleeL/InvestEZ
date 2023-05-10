@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FixedProfitActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="64dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/btn_arraw1" />
+
+
+    <TextView
+        android:id="@+id/tvFd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/tvFd2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvFd21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs "
+            android:textAlignment="center"
+            android:textColor="#5c5f72"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/fxed_prof_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:textColor="#5c5f72"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnfixed_prof_Save"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="48dp"
+        android:background="#167639"
+        android:text="@string/btnSaveF"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <Button
+            android:id="@+id/btnfixedUpadate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:backgroundTint="@color/gree_100"
+            android:text="@string/btnUpadateF" />
+
+        <Button
+            android:id="@+id/btn_fixDeleteG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:visibility="gone"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="140dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="@string/btnDeleteF" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nav"
+        android:layout_height="wrap_content"
+        android:background="@color/gree_100"
+        app:itemTextColor="@drawable/nav_style"
+        app:itemIconTint="@drawable/nav_style"
+        app:menu="@menu/bottom_nav"/>
+
+</LinearLayout>

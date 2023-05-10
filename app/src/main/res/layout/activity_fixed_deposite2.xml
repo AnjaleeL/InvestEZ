@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_background"
+    android:backgroundTintMode="screen"
+    android:orientation="vertical"
+    tools:context=".FixedDeposite">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="64dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/btn_arraw1" />
+
+    <TextView
+        android:id="@+id/tvFd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="serif"
+        android:text="Fixed Deposit"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/view_pt_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="See all Fixed Deposits"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/view_prev_fixed_depo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_famous"
+            android:fontFamily="serif"
+            android:text="@string/btnView"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageFd"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/fx" />
+
+    <!--    <TableLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="40dp"-->
+    <!--        android:background="@color/white">-->
+
+    <!--        <TableRow android:background="@color/gree_100">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/fCol1"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center_horizontal"-->
+    <!--                android:layout_weight="4"-->
+    <!--                android:padding="10sp"-->
+    <!--                android:text="@string/fCol1"-->
+    <!--                android:textAlignment="textStart"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="16sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/fcol2"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center_horizontal"-->
+    <!--                android:layout_weight="4"-->
+    <!--                android:padding="10sp"-->
+    <!--                android:text="@string/fCol2"-->
+    <!--                android:textAlignment="textStart"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="16sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/fCol3"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center_horizontal"-->
+    <!--                android:layout_weight="4"-->
+    <!--                android:padding="10sp"-->
+    <!--                android:text="@string/fCol3"-->
+    <!--                android:textAlignment="textStart"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="16sp" />-->
+    <!--        </TableRow>-->
+
+    <!--        <TableRow>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/fRow1"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="4"-->
+    <!--                android:background="#C2E8D0"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:padding="10sp"-->
+
+    <!--                android:text="@string/fRow1Bank"-->
+    <!--                android:textAlignment="textStart"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                tools:ignore="RtlCompat" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="4"-->
+    <!--                android:background="#FFC2E8D0"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:padding="10sp"-->
+    <!--                android:text="@string/fRow2Option"-->
+    <!--                android:textAlignment="textStart"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="4"-->
+    <!--                android:background="#FFC2E8D0"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:padding="10sp"-->
+    <!--                android:text="@string/fRow3Rate"-->
+    <!--                android:textAlignment="textStart"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="14sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--        </TableRow>-->
+    <!--    </TableLayout>-->
+
+    <TextView
+        android:id="@+id/TvFAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/TvFAmount"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputAmountFixed"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="210dp"
+        android:ems="10"
+        android:hint="Rs.45,000/="
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/FDBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/FDBank"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/TvFDTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Time Plan"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/fixed_bank_spin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/banks" />
+
+            <Spinner
+                android:id="@+id/fixed_time_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/TimePlan" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnfixed_calculate"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_background"
+            android:backgroundTint="#167639"
+            android:text="@string/btnProceed"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:id="@+id/nav"
+            android:layout_height="wrap_content"
+            android:background="@color/gree_100"
+            app:itemTextColor="@drawable/nav_style"
+            android:layout_marginTop="110dp"
+            app:itemIconTint="@drawable/nav_style"
+            app:menu="@menu/bottom_nav"/>
+    </LinearLayout>
+
+</LinearLayout>
