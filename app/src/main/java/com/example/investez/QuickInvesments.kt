@@ -58,7 +58,7 @@ class QuickInvesments : AppCompatActivity() {
             val result = when (market) {
                 "Stock Market" -> {
                     when (asset) {
-                        "Central Bank Bonds" -> "125,000.00 LKR"
+                        "Central Bank Bonds" -> "125,000.00 LKR"     // central bank bonds
                         "Lanka IOC PLC Shares" -> "50,010.00 LKR"
                         "Bogawantalawa Tea Estates Shares" -> "100,000.00 LKR"
                         else -> "Invalid Asset"
