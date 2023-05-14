@@ -54,7 +54,7 @@ class QuickInvesments : AppCompatActivity() {
         }
 
         filterButton.setOnClickListener {
-            val market = marketSpinner.selectedItem.toString()
+            val market = marketSpinner.selectedItem.toString()  // string
             val asset = assetSpinner.selectedItem.toString()
             val result = when (market) {
                 "Stock Market" -> {
