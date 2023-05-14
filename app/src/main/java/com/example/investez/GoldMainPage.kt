@@ -76,7 +76,7 @@ class GoldMainPage : AppCompatActivity() {
                     Toast.makeText(this, "Error: Failed to fetch document", Toast.LENGTH_SHORT).show()
                 }
         }
-        //array list
+        //Gold array list
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 when (position) {
