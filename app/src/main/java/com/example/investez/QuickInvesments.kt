@@ -78,7 +78,7 @@ class QuickInvesments : AppCompatActivity() {
         }
 
         saveButton.setOnClickListener {
-            val currentUser = FirebaseAuth.getInstance().currentUser
+            val currentUser = FirebaseAuth.getInstance().currentUser  // current user
             val db = FirebaseFirestore.getInstance()
 
             val result = resultTextView.text.toString()       // result
