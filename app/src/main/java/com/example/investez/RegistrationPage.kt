@@ -14,7 +14,7 @@ class RegistrationPage : AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
     private lateinit var db: FirebaseFirestore
-
+    //values
     private lateinit var etUserName: EditText
     private lateinit var etUserEmail: EditText
     private lateinit var etUserAddress: EditText
