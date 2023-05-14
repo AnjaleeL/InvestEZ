@@ -32,6 +32,7 @@ class FixedDeposite : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fixed_deposite2)
 
+        // Get references to UI elements
         bankSpinner = findViewById(R.id.fixed_bank_spin)
         timeSpinner = findViewById(R.id.fixed_time_plan)
         investAmountEditText = findViewById(R.id.inputAmountFixed)
