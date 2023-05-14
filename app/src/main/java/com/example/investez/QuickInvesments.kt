@@ -80,7 +80,7 @@ class QuickInvesments : AppCompatActivity() {
             val currentUser = FirebaseAuth.getInstance().currentUser
             val db = FirebaseFirestore.getInstance()
 
-            val result = resultTextView.text.toString()
+            val result = resultTextView.text.toString()       // result
             val asset = assetSpinner.selectedItem.toString()
             val market = marketSpinner.selectedItem.toString()
 
