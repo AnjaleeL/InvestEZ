@@ -26,7 +26,7 @@ class QuickInvesments : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quick_invesments)
 
-        marketSpinner = findViewById(R.id.market_spinner)
+        marketSpinner = findViewById(R.id.market_spinner) // marketspinner
         assetSpinner = findViewById(R.id.asset_spinner)
         filterButton = findViewById(R.id.filter_button)
         resultTextView = findViewById(R.id.result_text_view)
