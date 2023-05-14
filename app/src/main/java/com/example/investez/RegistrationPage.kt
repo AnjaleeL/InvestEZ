@@ -94,7 +94,7 @@ class RegistrationPage : AppCompatActivity() {
 
         }
     }
-
+    //validations
     private fun validateInputs(
         name: String,
         email: String,
