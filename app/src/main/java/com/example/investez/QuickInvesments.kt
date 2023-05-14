@@ -49,6 +49,7 @@ class QuickInvesments : AppCompatActivity() {
 
             override fun onNothingSelected(parent: AdapterView<*>) {
                 // Do nothing
+                // override
             }
         }
 
@@ -66,7 +67,7 @@ class QuickInvesments : AppCompatActivity() {
                 }
                 "Real Estate" -> {
                     when (asset) {
-                        "Colombo Metro Area 1 perch" -> "807,000.00 LKR"
+                        "Colombo Metro Area 1 perch" -> "807,000.00 LKR"   // real estate
                         "Marata Rural Area 2 perch" -> "500,000.00 LKR"
                         else -> "Invalid Asset"
                     }
