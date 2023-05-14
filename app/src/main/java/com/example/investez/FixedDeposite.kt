@@ -73,7 +73,7 @@ class FixedDeposite : AppCompatActivity() {
                 }
         }
 
-        // Set up the spinner adapters
+        // Set up the spinner adapterss
         val bankAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, banks)
         bankAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         bankSpinner.adapter = bankAdapter
