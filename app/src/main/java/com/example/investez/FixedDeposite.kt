@@ -46,6 +46,7 @@ class FixedDeposite : AppCompatActivity() {
         // check if there is a fixedID passed from FixedDepositListView
         fixedID = intent.getStringExtra("fixedID") ?: ""
 
+
         if (fixedID.isNotEmpty()) {
             // if there is a fixedID, fetch the details from Firestore and populate the form
             db.collection("fixedInvestments").document(fixedID)
@@ -72,7 +73,7 @@ class FixedDeposite : AppCompatActivity() {
                 }
         }
 
-        // Set up the spinner adapters
+        // Set up the spinner adapterss
         val bankAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, banks)
         bankAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         bankSpinner.adapter = bankAdapter
@@ -90,6 +91,8 @@ class FixedDeposite : AppCompatActivity() {
             val intent = Intent(this, FixedDepositListView::class.java)
             startActivity(intent)
         }
+
+        //bottom navigation
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -116,6 +119,7 @@ class FixedDeposite : AppCompatActivity() {
         }
     }
 
+    //calculate the process
     private fun calculateMaturity() {
         val investAmount = investAmountEditText.text.toString().toBigDecimalOrNull()
         val bank = bankSpinner.selectedItem.toString()
