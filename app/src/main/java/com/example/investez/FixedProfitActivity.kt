@@ -133,7 +133,7 @@ class FixedProfitActivity : AppCompatActivity() {
                     true
                 }
                 R.id.notify -> {
-                    // handle setting click
+                    //handle setting click
                     val intent = Intent(this, QuickInvesments::class.java)
                     startActivity(intent)
                     true
