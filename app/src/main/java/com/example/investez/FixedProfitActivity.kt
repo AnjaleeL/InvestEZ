@@ -56,7 +56,7 @@ class FixedProfitActivity : AppCompatActivity() {
         val currentUser = FirebaseAuth.getInstance().currentUser
         val userID = currentUser?.uid
 
-
+//add
         saveButton.setOnClickListener {
             val db = Firebase.firestore
             val fixedInvestment = hashMapOf(
@@ -91,7 +91,7 @@ class FixedProfitActivity : AppCompatActivity() {
                     Toast.makeText(this, "Investment save failed", Toast.LENGTH_SHORT).show()
                 }
         }
-
+//update
         buttonUpdate.setOnClickListener {
             val db = Firebase.firestore
             val fixedInvestment = hashMapOf(
