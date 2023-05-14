@@ -130,7 +130,7 @@ class QuickInvesments : AppCompatActivity() {
                         Toast.makeText(this, "Error getting user information: ${e.message}", Toast.LENGTH_SHORT).show()
                     }
             } else {
-                Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please choose a request", Toast.LENGTH_SHORT).show()
             }
         }
 
