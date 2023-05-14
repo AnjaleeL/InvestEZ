@@ -46,6 +46,7 @@ class FixedDeposite : AppCompatActivity() {
         // check if there is a fixedID passed from FixedDepositListView
         fixedID = intent.getStringExtra("fixedID") ?: ""
 
+
         if (fixedID.isNotEmpty()) {
             // if there is a fixedID, fetch the details from Firestore and populate the form
             db.collection("fixedInvestments").document(fixedID)
@@ -90,6 +91,8 @@ class FixedDeposite : AppCompatActivity() {
             val intent = Intent(this, FixedDepositListView::class.java)
             startActivity(intent)
         }
+
+        //bottom navigation
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {
