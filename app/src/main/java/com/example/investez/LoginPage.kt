@@ -22,11 +22,11 @@ class LoginPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_page)
 
-        // Initialize Firebase
+        // Initializing Firebase
         FirebaseApp.initializeApp(this)
 
 
-        // Initialize UI elements
+        // Initializing UI elements
         emailEditText = findViewById(R.id.login_edit_email)
         passwordEditText = findViewById(R.id.login_edit_password)
         loginButton = findViewById(R.id.logn_button)

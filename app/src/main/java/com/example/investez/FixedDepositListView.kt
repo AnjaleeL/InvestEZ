@@ -16,12 +16,13 @@ import com.google.firebase.ktx.Firebase
 
 class FixedDepositListView : AppCompatActivity() {
 
+    // Initialize Firebase authentication and Firestore, list of fixed investments, and add button
     private lateinit var auth: FirebaseAuth
     private lateinit var db: FirebaseFirestore
     private lateinit var fixedInvestmentList: MutableList<FixedInvestment>
     private lateinit var addButton: Button
 
-
+    // On creation of activity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fixed_deposit_list_view)
@@ -45,6 +46,7 @@ class FixedDepositListView : AppCompatActivity() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 
+        //bottom navigation
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -92,9 +94,7 @@ class FixedDepositListView : AppCompatActivity() {
             Log.w(TAG, "Current user is null.")
         }
     }
-
     companion object {
         private const val TAG = "MainActivity"
-
     }
 }
