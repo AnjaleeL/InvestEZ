@@ -90,8 +90,8 @@ class QuickInvesments : AppCompatActivity() {
                     .get()
                     .addOnSuccessListener { document ->
                         if (document.exists()) {
-                            val userName = document.getString("name") ?: ""
-                            val userEmail = document.getString("email") ?: ""
+                            val userName = document.getString("name") ?: ""  // name
+                            val userEmail = document.getString("email") ?: "" // email
 
                             val investment = hashMapOf(
                                 "result" to result,
