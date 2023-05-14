@@ -28,7 +28,7 @@ class QuickInvesments : AppCompatActivity() {
 
         marketSpinner = findViewById(R.id.market_spinner) // marketspinner
         assetSpinner = findViewById(R.id.asset_spinner)  // assetspinner
-        filterButton = findViewById(R.id.filter_button)
+        filterButton = findViewById(R.id.filter_button)  // filterbutton
         resultTextView = findViewById(R.id.result_text_view)
         saveButton = findViewById(R.id.btn_request_save)
         viewButton = findViewById(R.id.view_prev_quick_inves)
