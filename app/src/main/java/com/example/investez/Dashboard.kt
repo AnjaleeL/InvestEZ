@@ -36,6 +36,7 @@ class Dashboard : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Set up bottom navigation view
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {
