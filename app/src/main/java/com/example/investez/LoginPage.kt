@@ -22,7 +22,7 @@ class LoginPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_page)
 
-        // Initialize Firebase
+        // Initializing Firebase
         FirebaseApp.initializeApp(this)
 
 
