@@ -74,7 +74,7 @@ class goldListActivity : AppCompatActivity() {
             val intent = Intent(this, GoldMainPage::class.java)
             startActivity(intent)
         }
-
+        //navbar
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {
