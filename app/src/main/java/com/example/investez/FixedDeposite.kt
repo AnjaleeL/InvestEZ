@@ -32,12 +32,14 @@ class FixedDeposite : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fixed_deposite2)
 
+        // Get references to UI elements
         bankSpinner = findViewById(R.id.fixed_bank_spin)
         timeSpinner = findViewById(R.id.fixed_time_plan)
         investAmountEditText = findViewById(R.id.inputAmountFixed)
         calculateButton = findViewById(R.id.btnfixed_calculate)
         viewButton = findViewById(R.id.view_prev_fixed_depo)
 
+        // Initialize Firebase authentication and database instances
         auth = FirebaseAuth.getInstance()
         db = FirebaseFirestore.getInstance()
 
