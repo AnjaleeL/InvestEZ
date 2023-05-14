@@ -48,9 +48,6 @@ class FixedProfitActivity : AppCompatActivity() {
         val maturityDouble = maturity.toDouble()
         val investAmountDouble = investAmount.toDouble()
 
-//        println("Maaaaaaaaaaaaaaaaaaaaaturity $maturity!")
-//        println("Inveeeeeeeeeeeeeeeeeeeeesssssssss $investAmount!")
-//        println("proffffffffffffffffffffff $profit!")
 
         val profitText = findViewById<TextView>(R.id.fxed_prof_text)
         profitText.text = profit.toString()
@@ -119,7 +116,7 @@ class FixedProfitActivity : AppCompatActivity() {
                     Toast.makeText(this, "Investment update failed", Toast.LENGTH_SHORT).show()
                 }
         }
-
+        // Set up bottom navigation view
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {

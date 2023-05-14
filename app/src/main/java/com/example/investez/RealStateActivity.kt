@@ -10,6 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class RealStateActivity : AppCompatActivity() {
 
+    // Initialize variables to hold references to UI elements
     private lateinit var citySpinner: Spinner
     private lateinit var typeSpinner: Spinner
     private lateinit var calculateButton: Button
@@ -19,15 +20,18 @@ class RealStateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_real_state)
 
+        // Assign references to UI elements
         citySpinner = findViewById(R.id.city_spinner)
         typeSpinner = findViewById(R.id.type_spinner)
         calculateButton = findViewById(R.id.btnLiveRateState)
         resultTextView = findViewById(R.id.today_state_rate)
 
+        // Set up button click listener
         calculateButton.setOnClickListener {
             val city = citySpinner.selectedItem.toString()
             val type = typeSpinner.selectedItem.toString()
 
+            // Look up real estate value based on city and type
             val value = when (city) {
                 "Anuradhapura" -> when (type) {
                     "Urban" -> "475,000 LKR"
@@ -71,10 +75,10 @@ class RealStateActivity : AppCompatActivity() {
                 }
                 else -> "0"
             }
-
+            // Display real estate value in TextView
             resultTextView.text = value
         }
-
+        // Set up bottom navigation view
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {
