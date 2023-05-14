@@ -192,7 +192,7 @@ class GoldMainPage : AppCompatActivity() {
                 Toast.makeText(this, "Please enter an investment amount", Toast.LENGTH_LONG).show()
             }
         }
-
+        //Update button
         updateButton.setOnClickListener {
             val db = Firebase.firestore
             val userID = FirebaseAuth.getInstance().currentUser?.uid
