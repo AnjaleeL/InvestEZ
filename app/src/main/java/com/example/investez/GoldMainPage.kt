@@ -182,11 +182,11 @@ class GoldMainPage : AppCompatActivity() {
                             startActivity(intent)
                         }
                         .addOnFailureListener {
-                            // Failure
+                            Toast.makeText(this, "Error!", Toast.LENGTH_LONG).show()
                         }
                 }
                 .addOnFailureListener {
-                    // Failure
+                    Toast.makeText(this, "Error!", Toast.LENGTH_LONG).show()
                 }
             }else {
                 Toast.makeText(this, "Please enter an investment amount", Toast.LENGTH_LONG).show()

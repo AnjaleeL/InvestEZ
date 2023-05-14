@@ -181,7 +181,7 @@
                         android:layout_marginRight="16dp"
                         android:layout_marginBottom="16dp"
                         android:shadowRadius="200"
-                        android:text="Gold \t 1g"
+                        android:text="Estate \t price"
                         android:textSize="16sp" />
 
                     <TextView

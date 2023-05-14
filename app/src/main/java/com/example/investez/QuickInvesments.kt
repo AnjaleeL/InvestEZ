@@ -1,6 +1,6 @@
 package com.example.investez
 
-import android.content.Intent
+import android.content.Intent // imports
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -26,9 +26,9 @@ class QuickInvesments : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quick_invesments)
 
-        marketSpinner = findViewById(R.id.market_spinner)
-        assetSpinner = findViewById(R.id.asset_spinner)
-        filterButton = findViewById(R.id.filter_button)
+        marketSpinner = findViewById(R.id.market_spinner) // marketspinner
+        assetSpinner = findViewById(R.id.asset_spinner)  // assetspinner
+        filterButton = findViewById(R.id.filter_button)  // filterbutton
         resultTextView = findViewById(R.id.result_text_view)
         saveButton = findViewById(R.id.btn_request_save)
         viewButton = findViewById(R.id.view_prev_quick_inves)
@@ -49,16 +49,17 @@ class QuickInvesments : AppCompatActivity() {
 
             override fun onNothingSelected(parent: AdapterView<*>) {
                 // Do nothing
+                // override
             }
         }
 
         filterButton.setOnClickListener {
-            val market = marketSpinner.selectedItem.toString()
+            val market = marketSpinner.selectedItem.toString()  // string
             val asset = assetSpinner.selectedItem.toString()
             val result = when (market) {
                 "Stock Market" -> {
                     when (asset) {
-                        "Central Bank Bonds" -> "125,000.00 LKR"
+                        "Central Bank Bonds" -> "125,000.00 LKR"     // central bank bonds
                         "Lanka IOC PLC Shares" -> "50,010.00 LKR"
                         "Bogawantalawa Tea Estates Shares" -> "100,000.00 LKR"
                         else -> "Invalid Asset"
@@ -66,21 +67,21 @@ class QuickInvesments : AppCompatActivity() {
                 }
                 "Real Estate" -> {
                     when (asset) {
-                        "Colombo Metro Area 1 perch" -> "807,000.00 LKR"
+                        "Colombo Metro Area 1 perch" -> "807,000.00 LKR"   // real estate
                         "Marata Rural Area 2 perch" -> "500,000.00 LKR"
                         else -> "Invalid Asset"
                     }
                 }
                 else -> "Invalid Market"
             }
-            resultTextView.text = asset + " - " + result
+            resultTextView.text = asset + " - " + result    // result
         }
 
         saveButton.setOnClickListener {
-            val currentUser = FirebaseAuth.getInstance().currentUser
+            val currentUser = FirebaseAuth.getInstance().currentUser  // current user
             val db = FirebaseFirestore.getInstance()
 
-            val result = resultTextView.text.toString()
+            val result = resultTextView.text.toString()       // result
             val asset = assetSpinner.selectedItem.toString()
             val market = marketSpinner.selectedItem.toString()
 
@@ -90,8 +91,8 @@ class QuickInvesments : AppCompatActivity() {
                     .get()
                     .addOnSuccessListener { document ->
                         if (document.exists()) {
-                            val userName = document.getString("name") ?: ""
-                            val userEmail = document.getString("email") ?: ""
+                            val userName = document.getString("name") ?: ""  // name
+                            val userEmail = document.getString("email") ?: "" // email
 
                             val investment = hashMapOf(
                                 "result" to result,
@@ -130,7 +131,7 @@ class QuickInvesments : AppCompatActivity() {
                         Toast.makeText(this, "Error getting user information: ${e.message}", Toast.LENGTH_SHORT).show()
                     }
             } else {
-                Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please choose a request", Toast.LENGTH_SHORT).show()
             }
         }
 
