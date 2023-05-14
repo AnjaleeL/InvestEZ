@@ -28,7 +28,7 @@ class goldListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gold_list)
 
-        // Initialize RecyclerView
+        // Initializing RecyclerView
         goldRecyclerView = findViewById(R.id.rvGold)
         goldRecyclerView.layoutManager = LinearLayoutManager(this)
 
