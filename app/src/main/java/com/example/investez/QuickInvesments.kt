@@ -74,7 +74,7 @@ class QuickInvesments : AppCompatActivity() {
                 }
                 else -> "Invalid Market"
             }
-            resultTextView.text = asset + " - " + result
+            resultTextView.text = asset + " - " + result    // result
         }
 
         saveButton.setOnClickListener {
