@@ -28,7 +28,7 @@ class goldListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gold_list)
 
-        // Initialize RecyclerView
+        // Initializing RecyclerView
         goldRecyclerView = findViewById(R.id.rvGold)
         goldRecyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -74,7 +74,7 @@ class goldListActivity : AppCompatActivity() {
             val intent = Intent(this, GoldMainPage::class.java)
             startActivity(intent)
         }
-
+        //navbar
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {

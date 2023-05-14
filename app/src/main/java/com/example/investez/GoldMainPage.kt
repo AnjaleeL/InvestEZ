@@ -76,7 +76,7 @@ class GoldMainPage : AppCompatActivity() {
                     Toast.makeText(this, "Error: Failed to fetch document", Toast.LENGTH_SHORT).show()
                 }
         }
-
+        //Gold array list
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 when (position) {
@@ -150,7 +150,7 @@ class GoldMainPage : AppCompatActivity() {
                 }
             }
         })
-
+        //Save button
         goldSaveButton.setOnClickListener {
             val userID = FirebaseAuth.getInstance().currentUser?.uid
             val goldWeight = spinner.selectedItem.toString()
@@ -192,7 +192,7 @@ class GoldMainPage : AppCompatActivity() {
                 Toast.makeText(this, "Please enter an investment amount", Toast.LENGTH_LONG).show()
             }
         }
-
+        //Update button
         updateButton.setOnClickListener {
             val db = Firebase.firestore
             val userID = FirebaseAuth.getInstance().currentUser?.uid
