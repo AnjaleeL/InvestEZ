@@ -39,6 +39,7 @@ class FixedDeposite : AppCompatActivity() {
         calculateButton = findViewById(R.id.btnfixed_calculate)
         viewButton = findViewById(R.id.view_prev_fixed_depo)
 
+        // Initialize Firebase authentication and database instances
         auth = FirebaseAuth.getInstance()
         db = FirebaseFirestore.getInstance()
 
