@@ -150,7 +150,7 @@ class GoldMainPage : AppCompatActivity() {
                 }
             }
         })
-
+        //Save button
         goldSaveButton.setOnClickListener {
             val userID = FirebaseAuth.getInstance().currentUser?.uid
             val goldWeight = spinner.selectedItem.toString()
