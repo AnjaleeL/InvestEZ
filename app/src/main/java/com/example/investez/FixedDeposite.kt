@@ -119,6 +119,7 @@ class FixedDeposite : AppCompatActivity() {
         }
     }
 
+    //calculations
     private fun calculateMaturity() {
         val investAmount = investAmountEditText.text.toString().toBigDecimalOrNull()
         val bank = bankSpinner.selectedItem.toString()
