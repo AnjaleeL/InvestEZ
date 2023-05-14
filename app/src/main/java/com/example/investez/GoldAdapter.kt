@@ -25,6 +25,7 @@ class GoldAdapter(private val context: Context, private val goldList: List<Gold>
         val deleteButton: Button = itemView.findViewById(R.id.btn_delete_gold)
     }
 
+    //pass the values
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.gold_list_item, parent, false)
