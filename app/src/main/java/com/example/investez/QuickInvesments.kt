@@ -1,6 +1,6 @@
 package com.example.investez
 
-import android.content.Intent
+import android.content.Intent // imports
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
