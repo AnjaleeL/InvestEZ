@@ -151,6 +151,7 @@ class GoldMainPage : AppCompatActivity() {
             }
         })
 
+        //save function
         goldSaveButton.setOnClickListener {
             val userID = FirebaseAuth.getInstance().currentUser?.uid
             val goldWeight = spinner.selectedItem.toString()
@@ -193,6 +194,7 @@ class GoldMainPage : AppCompatActivity() {
             }
         }
 
+        //update function
         updateButton.setOnClickListener {
             val db = Firebase.firestore
             val userID = FirebaseAuth.getInstance().currentUser?.uid

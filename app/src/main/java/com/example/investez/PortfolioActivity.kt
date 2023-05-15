@@ -41,10 +41,38 @@ class PortfolioActivity : AppCompatActivity() {
         btnUpdate.setOnClickListener {
             val name = editName.text.toString().trim()
             val investmentType = spinnerInvestmentType.selectedItem.toString()
-            val investmentAmount = editInvestmentAmount.text.toString().toDouble()
-            val profitSoFar = editProfitSoFar.text.toString().toDouble()
+            val investmentAmountStr = editInvestmentAmount.text.toString().trim()
+            val profitSoFarStr = editProfitSoFar.text.toString().trim()
             val notes = editNotes.text.toString().trim()
             val userId = currentUserId ?: ""
+
+            // Required field validations
+            if (name.isEmpty()) {
+                editName.error = "Name is required"
+                return@setOnClickListener
+            }
+
+            if (investmentAmountStr.isEmpty()) {
+                editInvestmentAmount.error = "Investment amount is required"
+                return@setOnClickListener
+            }
+
+            if (profitSoFarStr.isEmpty()) {
+                editProfitSoFar.error = "Profit so far is required"
+                return@setOnClickListener
+            }
+
+            val investmentAmount = investmentAmountStr.toDoubleOrNull()
+            if (investmentAmount == null) {
+                editInvestmentAmount.error = "Investment amount should be a number"
+                return@setOnClickListener
+            }
+
+            val profitSoFar = profitSoFarStr.toDoubleOrNull()
+            if (profitSoFar == null) {
+                editProfitSoFar.error = "Profit so far should be a number"
+                return@setOnClickListener
+            }
 
             val portfolio = Portfolio(name, investmentType, investmentAmount, profitSoFar, notes, userId)
 
@@ -71,6 +99,7 @@ class PortfolioActivity : AppCompatActivity() {
                 }
         }
 
+        //clearing the form
         clearButton.setOnClickListener {
             editName.setText("")
             spinnerInvestmentType.setSelection(0)

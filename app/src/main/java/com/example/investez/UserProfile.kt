@@ -101,6 +101,7 @@ class UserProfile : AppCompatActivity() {
             finish()
         }
 
+        //Update function
         val btnUpdate = findViewById<Button>(R.id.btnUpdateUserProfile)
         btnUpdate.setOnClickListener {
             // Get the new name and address values from the EditText fields
