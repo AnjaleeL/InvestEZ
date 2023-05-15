@@ -48,9 +48,6 @@ class FixedProfitActivity : AppCompatActivity() {
         val maturityDouble = maturity.toDouble()
         val investAmountDouble = investAmount.toDouble()
 
-//        println("Maaaaaaaaaaaaaaaaaaaaaturity $maturity!")
-//        println("Inveeeeeeeeeeeeeeeeeeeeesssssssss $investAmount!")
-//        println("proffffffffffffffffffffff $profit!")
 
         val profitText = findViewById<TextView>(R.id.fxed_prof_text)
         profitText.text = profit.toString()
