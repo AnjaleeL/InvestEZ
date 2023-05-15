@@ -11,6 +11,7 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
+        // Set up button listeners for each investment option
         val btnGold = findViewById<Button>(R.id.btnGold)
         btnGold.setOnClickListener {
             val intent = Intent(this, GoldMainPage::class.java)
@@ -35,6 +36,7 @@ class Dashboard : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Set up bottom navigation view
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {

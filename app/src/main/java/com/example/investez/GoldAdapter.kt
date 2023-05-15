@@ -16,7 +16,7 @@ import com.google.firebase.ktx.Firebase
 
 class GoldAdapter(private val context: Context, private val goldList: List<Gold>) :
     RecyclerView.Adapter<GoldAdapter.ViewHolder>() {
-
+    //Initializing the adapter class
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val weightTextView: TextView = itemView.findViewById(R.id.weight_of_gold)
         val rateTextView: TextView = itemView.findViewById(R.id.rate_of_gold)
@@ -25,6 +25,7 @@ class GoldAdapter(private val context: Context, private val goldList: List<Gold>
         val deleteButton: Button = itemView.findViewById(R.id.btn_delete_gold)
     }
 
+    //pass the values
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.gold_list_item, parent, false)

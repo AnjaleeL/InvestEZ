@@ -24,6 +24,7 @@ class FixedProfitActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fixed_profit)
 
+        // Retrieve values passed through intent
         val intent = intent
         val bank = intent.getStringExtra("bank")
         val timePlan = intent.getStringExtra("timePlan")
@@ -116,7 +117,7 @@ class FixedProfitActivity : AppCompatActivity() {
                     Toast.makeText(this, "Investment update failed", Toast.LENGTH_SHORT).show()
                 }
         }
-
+        // Set up bottom navigation view
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -133,7 +134,7 @@ class FixedProfitActivity : AppCompatActivity() {
                     true
                 }
                 R.id.notify -> {
-                    // handle setting click
+                    //handle setting click
                     val intent = Intent(this, QuickInvesments::class.java)
                     startActivity(intent)
                     true
